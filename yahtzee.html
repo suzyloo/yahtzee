@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,8 +61,10 @@
 			}
 			
 			function selectScoring(id){
+				
 				//Once this is clicked, we need to reset the roll count.
 					rollCount = 0;
+					
 				// Let's get an array of the dice values.
 					for(x=0; x<5; x++){
 						if(document.getElementById("d" + x) != null){
@@ -270,8 +273,7 @@
 			
 			function setScore(id, score){
 				var box = document.getElementById(id);
-				box.value = score;
-				box.disabled = true;
+				box.innerHTML = score;
 				box.onclick = null;
 				
 				//Reset the dice.
@@ -365,70 +367,70 @@
 		<div class="normalLine firstLine">
 			<span class="noteText">1's
 			</text>
-			<input class="box" value="" id="1s" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="1s" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText"> 2's
 			</text>
-			<input class="box" value="" id="2s" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="2s" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">3's
 			</text>
-			<input class="box" value="" id="3s" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="3s" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText"> 4's
 			</text>
-			<input class="box" value="" id="4s" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="4s" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">5's
 			</text>
-			<input class="box" value="" id="5s" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="5s" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">6's
 			</text>
-			<input class="box" value="" id="6s" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="6s" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">  Small Straight
 			</text>
-			<input class="box" id="sst" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="sst" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">Large Straight
 			</text>
-			<input class="box" id="lst" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="lst" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">Full House
 			</text>
-			<input class="box" id="ful" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="ful" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">3-of-a-Kind
 			</text>
-			<input class="box" id="3of" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="3of" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">4-of-a-Kind
 			</text>
-			<input class="box" id="4of" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="4of" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">Yahtzee!!
 			</text>
-			<input class="box" id="ytz" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="ytz" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
 			<span class="noteText">Chance
 			</text>
-			<input class="box" id="chn" type="text" onclick="selectScoring(this.id)" size="3">
+			<div class="boxD" id="chn" onclick="selectScoring(this.id)">&nbsp;</div>
 		</div>
 		<div class="normalLine">
- 			<span class="noteText">
+ 			<span class="noteText">&nbsp;
  			</text>
 		</div>
 		<div class="normalLine">
@@ -437,23 +439,23 @@
 			<input class="box" disabled=true id="TTL" type="text"  size="3">
 		</div>
 		<div class="normalLine">
- 			<span class="noteText">
+ 			<span class="noteText">&nbsp;
  			</text>
 		</div>
 		<div class="normalLine">
- 			<span class="noteText">
+ 			<span class="noteText">&nbsp;
  			</text>
 		</div>
 		<div class="normalLine">
- 			<span class="noteText">
+ 			<span class="noteText">&nbsp;
  			</text>
 		</div>
 		<div class="normalLine">
- 			<span class="noteText">
+ 			<span class="noteText">&nbsp;
  			</text>
 		</div>
 		<div class="normalLine">
- 			<span class="noteText">
+ 			<span class="noteText">&nbsp;
  			</text>
 		</div>
 			
